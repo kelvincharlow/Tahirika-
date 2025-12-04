@@ -43,20 +43,21 @@ const Navbar = () => {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="flex justify-between items-center h-16">
+      <div className="max-w-6xl mx-auto px-3 sm:px-6">
+        <div className="flex justify-between items-center h-16 sm:h-16">
           
-          {/* Minimal Logo */}
+          {/* Responsive Logo */}
           <motion.div
             whileHover={{ scale: 1.02 }}
-            className="flex items-center space-x-3"
+            className="flex items-center space-x-2 sm:space-x-3 max-w-[280px] sm:max-w-none"
           >
-            <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">T</span>
+            <div className="w-7 h-7 sm:w-8 sm:h-8 bg-black rounded-lg flex items-center justify-center flex-shrink-0">
+              <span className="text-white font-bold text-sm sm:text-lg">T</span>
             </div>
-            <span className="font-semibold text-xl text-gray-900 tracking-tight">
-              Tahirika Afrotech Solutions
-            </span>
+            {/* Full name on all screens with responsive sizing */}
+            <div className="font-semibold text-gray-900 tracking-tight leading-tight">
+              <span className="text-sm sm:text-xl">Tahirika Afrotech Solutions</span>
+            </div>
           </motion.div>
 
           {/* Clean Desktop Navigation */}

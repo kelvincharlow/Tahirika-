@@ -11,7 +11,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="relative flex items-start justify-center overflow-hidden bg-gradient-to-br from-neutral-sand via-white to-neutral-gray pt-16 pb-8">
+    <section id="home" className="relative flex items-start justify-center overflow-hidden bg-gradient-to-br from-neutral-sand via-white to-neutral-gray pt-20 sm:pt-16 pb-8">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-32 left-10 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl animate-float"></div>
@@ -19,11 +19,11 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent-red/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-4 sm:pt-8 lg:pt-12">
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center min-h-[280px] sm:min-h-[320px] lg:min-h-[360px]">
           {/* Left Content */}
           <div className="text-center order-1">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-neutral-charcoal mb-4 lg:mb-6 mt-4 sm:mt-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-neutral-charcoal mb-4 lg:mb-6 mt-2 sm:mt-4 lg:mt-6">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
                 Pioneering Africa's Digital Future
               </span>
