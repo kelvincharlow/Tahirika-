@@ -49,14 +49,14 @@ const Navbar = () => {
           {/* Responsive Logo */}
           <motion.div
             whileHover={{ scale: 1.02 }}
-            className="flex items-center space-x-2 sm:space-x-3 max-w-[280px] sm:max-w-none"
+            className="flex items-center space-x-3 sm:space-x-3 max-w-[350px] sm:max-w-none"
           >
-            <div className="w-7 h-7 sm:w-8 sm:h-8 bg-black rounded-lg flex items-center justify-center flex-shrink-0">
-              <span className="text-white font-bold text-sm sm:text-lg">T</span>
+            <div className="w-9 h-9 sm:w-8 sm:h-8 bg-black rounded-lg flex items-center justify-center flex-shrink-0">
+              <span className="text-white font-bold text-lg sm:text-lg">T</span>
             </div>
             {/* Full name on all screens with responsive sizing */}
             <div className="font-semibold text-gray-900 tracking-tight leading-tight">
-              <span className="text-sm sm:text-xl">Tahirika Afrotech Solutions</span>
+              <span className="text-lg sm:text-xl">Tahirika Afrotech Solutions</span>
             </div>
           </motion.div>
 
