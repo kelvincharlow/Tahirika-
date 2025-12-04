@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ShoppingCart, Users, BarChart3, Smartphone, ExternalLink, Github, PlayCircle } from 'lucide-react';
+import { ShoppingCart, Users, BarChart3, Smartphone, ExternalLink, Github, PlayCircle, Calendar } from 'lucide-react';
 
 const Products = () => {
   const products = [
@@ -307,7 +307,7 @@ const Products = () => {
           ))}
         </div>
 
-        {/* Call to Action */}
+        {/* Enhanced Call to Action */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -315,21 +315,82 @@ const Products = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 md:p-12">
-            <h3 className="heading-3 text-white mb-4">
-              Have a Project in Mind?
-            </h3>
-            <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-              Let's discuss how we can create a custom digital solution that addresses 
-              your specific needs and challenges.
-            </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-white text-primary-500 font-semibold px-8 py-3 rounded-lg hover:shadow-lg transition-shadow"
-            >
-              Start a Conversation
-            </motion.button>
+          <div className="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 md:p-12 relative overflow-hidden">
+            {/* Background Pattern */}
+            <div className="absolute inset-0 bg-white/5 opacity-20">
+              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent"></div>
+            </div>
+            
+            <div className="relative z-10">
+              {/* Social Proof Indicator */}
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.6 }}
+                viewport={{ once: true }}
+                className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-4"
+              >
+                <div className="flex -space-x-1">
+                  <div className="w-6 h-6 bg-white rounded-full border-2 border-white/50"></div>
+                  <div className="w-6 h-6 bg-white rounded-full border-2 border-white/50"></div>
+                  <div className="w-6 h-6 bg-white rounded-full border-2 border-white/50"></div>
+                </div>
+                <span className="text-white/90 text-sm font-medium">50+ Happy Clients</span>
+              </motion.div>
+
+              <h3 className="heading-3 text-white mb-3">
+                Ready to Bring Your Vision to Life?
+              </h3>
+              <p className="text-white/90 mb-6 max-w-2xl mx-auto">
+                Join our growing list of satisfied clients. Get a free consultation 
+                and custom project roadmap worth $500.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-white text-primary-500 font-semibold px-8 py-4 rounded-lg hover:shadow-lg transition-all duration-200 flex items-center gap-2"
+                  onClick={() => {
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  <Calendar size={20} />
+                  Get Free Consultation
+                </motion.button>
+                
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white hover:text-primary-500 transition-all duration-200 flex items-center gap-2"
+                >
+                  <PlayCircle size={20} />
+                  View Our Work
+                </motion.button>
+              </div>
+
+              {/* Trust Indicators */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.4, duration: 0.6 }}
+                viewport={{ once: true }}
+                className="mt-6 flex flex-wrap justify-center items-center gap-6 text-white/70 text-sm"
+              >
+                <div className="flex items-center gap-1">
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                  Free Consultation
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                  2-Hour Response Time
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                  100% Satisfaction Rate
+                </div>
+              </motion.div>
+            </div>
           </div>
         </motion.div>
       </div>

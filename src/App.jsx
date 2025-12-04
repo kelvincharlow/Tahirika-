@@ -7,6 +7,7 @@ import Services from './components/Services';
 import Contact from './components/Contact';
 import Partners from './components/Partners';
 import Footer from './components/Footer';
+import ContactWidget from './components/ContactWidget';
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
         
         {/* Footer Section */}
         <Footer />
+        
+        {/* Interactive Contact Widget */}
+        <ContactWidget />
       </div>
     </ErrorBoundary>
   );

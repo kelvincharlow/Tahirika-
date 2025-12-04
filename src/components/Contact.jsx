@@ -37,13 +37,13 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      value: 'hello@tahirikaafrotech.com',
+      value: 'MAVUNOMARKET254@GMAIL.COM',
       description: 'Send us an email anytime'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      value: '+254 (0) 700 123 456',
+      value: '+254757277754',
       description: 'Mon-Fri from 8am to 6pm'
     },
     {
