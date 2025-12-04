@@ -43,7 +43,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      value: '+254757277754',
+      value: '+254757277524',
       description: 'Mon-Fri from 8am to 6pm'
     },
     {

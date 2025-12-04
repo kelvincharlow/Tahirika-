@@ -9,7 +9,7 @@ const ContactWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/254757277754?text=Hello! I\'d like to discuss a project with Tahirika Afrotech Solutions.', '_blank');
+    window.open('https://wa.me/254757277524?text=Hello! I\'d like to discuss a project with Tahirika Afrotech Solutions.', '_blank');
     setIsOpen(false); // Close the widget after action
   };
 
